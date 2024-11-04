@@ -48,12 +48,15 @@ def point(m,b,xl,xu):
     xl_num = hehe(xl)
     xu_num = hehe(xu)
     
-    if (m_num and b_num and xl_num and xu_num):
+    if ((m_num or m_num == 0) and
+        (b_num or b_num == 0) and
+        (xl_num or xl_num == 0) and
+        (xu_num or xu_num == 0)):
             y_arr = []
     for x in range(xl_num, xu_num + 1):
         y = m_num * x + b_num
 
-print(point(1,2,3,4))
+print(point(2,2,2,2))
 
 
 
