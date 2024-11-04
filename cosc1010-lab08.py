@@ -1,8 +1,8 @@
-# Your Name Here
+# Gabrial Escajeda
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section:
+# 11/4/24
+# Lab 08
+# Lab Section: 14
 # Sources, people worked with, help given to:
 # your
 # comments
@@ -14,9 +14,18 @@
 # Other wise return the converted int or float 
 # Floats should only have one decimal point in them 
 
+def hehe(strings):
+    returnvalue = False
+    try:
+        returnvalue = float(strings)
+        int(strings)
+        return returnvalue
+    except:
+        return returnvalue
+
+print(hehe("-57"))
 
 print("*" * 75)
-
 
 # Point-slope y = mx + b
 # This is used in mathematics to determine what the value y would be for any given x
@@ -33,6 +42,24 @@ print("*" * 75)
 # m, b can be floats or integers
 # the bounds must be integers, if not return false
 
+def point(m,b,xl,xu):
+    m_num = hehe(m)
+    b_num = hehe(b)
+    xl_num = hehe(xl)
+    xu_num = hehe(xu)
+    
+    if (m_num and b_num and xl_num and xu_num):
+            y_arr = []
+    for x in range(xl_num, xu_num + 1):
+        y = m_num * x + b_num
+
+print(point(1,2,3,4))
+
+
+
+
+
+
 # Create a while loop to prompt users for their input for the four variables
 # Exit on the word exit
 # Remember all inputs are strings, but the function needs ints or floats
@@ -40,7 +67,8 @@ print("*" * 75)
 
 print("*" * 75)
 
-
+# Use fuction from part 1 here
+# Function keeps looping until user types exit
 # Write a function to solve the quadratic formula
 # https://en.wikipedia.org/wiki/Quadratic_formula
 # Accept inputs for a, b, c
