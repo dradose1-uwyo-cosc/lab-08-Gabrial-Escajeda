@@ -47,8 +47,8 @@ def point(m,b,xl,xu):
     xl_num = hehe(xl)
     xu_num = hehe(xu)
     
-    xl_num = int(xl_num) if isinstance(xl_num, (int, float)) else False
-    xu_num = int(xu_num) if isinstance(xu_num, (int, float)) else False
+    xl_num = int(xl_num) if isinstance(xl_num, (int)) else False
+    xu_num = int(xu_num) if isinstance(xu_num, (int)) else False
 
     if isinstance(m_num, (int, float)) and isinstance(b_num, (int, float)) and isinstance(xl_num, (int, float)) and isinstance(xu_num, (int, float)):
         if xl_num > xu_num:
@@ -62,7 +62,6 @@ def point(m,b,xl,xu):
         return False
 
 print(point(2,2,2,2))
-
 
 
 # Create a while loop to prompt users for their input for the four variables
